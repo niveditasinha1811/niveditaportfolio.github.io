@@ -1,53 +1,3 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
-
-Project:    nivedita
-Version:    1.0
-Assigned to:    Themesmile 
---------------------------------------------------------------------
-[Table of contents]
-
-1. Body
-2. Header / #header
-3. Navigation Menu / .nav-menu
-4. Hero Section / #hero
-5. Clients Section / #clients
-6. Services Section / #services
-7. What We Do Section / #we-do
-8. Blog News Section / #blog-news
-9. Features Section / #features
-10. Testiomonial Section/ #testiomonial 
-11. Portfolio Section / #portfolio
-12. Experience Section / .experience
-13. Contact Section / .contact
-14. Footer / #footer
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Typography]
-
-Body copy:      14px "Manrope", sans-serif;
-Headers:        36px "Manrope", sans-serif;
-Input, textarea:    14px "Manrope", sans-serif;
-Sidebar Menu:    24px "Manrope", sans-serif;
-
----------------------------------------------------------------------
-
-[Color codes]
-
-Background: #ffffff (white) & #f7fbfe (light blue)
-Primary: #0dd7f7 (Light green) 
-Secondary: #0c3d71 (dark blue)
-Content text:   var(--lightColorMedium) #767e90 (light template) &  #fff9;(dark template)
-Header h1:  #394153 (dark grey)
-Header h2:  #394153 (dark grey)
-Button:     #0c3d71 (dark blue)
-
-a (standard):   #394153 (dark grey)
-a (visited):    #394153 (dark grey)
-a (active):     #394153 (dark grey)
-
-
--------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&amp;family=Manrope:wght@200;300;400;600;700;800&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;0,900;1,400&amp;display=swap");
@@ -64,7 +14,127 @@ html {
   --hero-bg-v-two: #4e8e9615;
   --bg-v-two-opacity: 0.5;
   --bg-v-two-footer:  #f7fbfeb8;
-  --bg-v-three:#a6e2ef;
+ 
+  --bg-v-three:#EEE1C6;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #f6aca2;
+  --color-secondary: #f49b90;
+  --color-tertiary: #f28b7d;
+  --color-quaternary: #f07a6a;
+  --color-quinary: #ee6352;
+  /*
+  --color-primary: #5192ED;
+  --color-secondary: #69A1F0;
+  --color-tertiary: #7EAEF2;
+  --color-quaternary: #90BAF5;
+  --color-quinary: #A2C4F5;
+  */
+}
+.status {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+}
+.status{
+  animation: animated-text 4s steps(19,end) 1s 1 normal both,
+             animated-cursor 600ms steps(19,end) infinite;
+}
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 260px;}
+}
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  //color: transparent;
+  //background-color: white;
+  //background-clip: text;
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 html[data-template='dark'] {
