@@ -37,6 +37,8 @@ html {
   --color-quinary: #A2C4F5;
   */
 }
+
+
 .status {
   border-right: solid 3px rgba(0,255,0,.75);
   white-space: nowrap;
@@ -59,7 +61,7 @@ html {
 .text_shadows {
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
     9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  font-family: bungee, sans-serif;
+    font-family: 'Sacramento', cursive;
   font-weight: 400;
   text-transform: uppercase;
   font-size: calc(2rem + 5vw);
@@ -311,7 +313,7 @@ html {
 ========================*/
 body {
   font-family: "Manrope", sans-serif;
-  color: var(--lightColorMedium);
+  color: #000;
   font-weight: 400;
   background-image: url(../img/bg-hero.svg);
   background-repeat: no-repeat;
@@ -492,6 +494,7 @@ h6 {
   color: var(--lightColor);
   text-decoration: none;
   font-size: 36px;
+  font-family: 'My Soul', cursive;
 }
 
 #header .logo h1 a strong {
@@ -1362,6 +1365,7 @@ li:hover > a {
   letter-spacing: -1.5px;
   text-align: left;
   color: var(--lightColor);
+  font-family: 'Allura', cursive;
 }
 
 @media only screen and (max-width: 479px) {
@@ -3179,7 +3183,7 @@ section {
   color: #fff;
   float: left;
   line-height: 1;
-  background: #0dd7f7;
+  background: #f4c8c4;
   padding: 12px;
   border-radius: 50px 30px 50px 50px;
   margin-right: 24px;
@@ -5545,7 +5549,7 @@ code {
 }
 
 .we-do-v-three h6 {
-  color: #0dd7f7 !important;
+  color: #ee6352 !important;
 }
 
 .we-do-v-three .icon-box-v-three {
@@ -5602,7 +5606,7 @@ code {
   line-height: 48px !important;
   font-size: 24px !important;
   color: #fff !important;
-  background-color: #0dd7f7 !important;
+  background-color: #ee635257!important;
 }
 
 /*------------------------------------------------------------------
@@ -5765,7 +5769,7 @@ code {
   color: #fff;
   float: left;
   line-height: 1;
-  background: #0dd7f7;
+  background: #ee635257;
   padding: 12px;
   border-radius: 50% !important;
   margin-right: 24px;
